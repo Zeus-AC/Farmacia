@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles/actualizar.css">
+    <link rel="stylesheet" href="styles/menu.css">
+    <script src="js/menu.js"></script>
+    <title>Actualizar Medicamento</title>
+</head>
+<body>
+    <header>
+        <nav id='cssmenu'>
+            <div class="logo"><a href="index.html">Farmacia </a></div>
+            <div id="head-mobile"></div>
+            <div class="button"></div>
+            <ul>
+                <li class='active'><a href='index.html'>Inicio</a></li>
+                <li><a href='insertar.html'> Insertar</a></li>
+                <li><a href='actualizar.html'>Actualizar</a></li>
+                <li><a href='venta_medicamento.html'>Ventas</a></li>
+                <li><a href='consultar.html'>Consultar
+                </a></li>
+                <li><a href='eliminar_producto.html'>Eliminar</a></li>
+            </ul>
+        </nav>
+       
+    </header>
+    <h1>Actualizar Medicamento</h1>
+    <form method="post" action="actualizar_medicamento.php">
+        <label for="medicamentoId">ID del Medicamento a Actualizar:</label>
+        <input type="number" id="medicamentoId" name="medicamentoId" required>
+        <br>
+        <label for="nuevoNombre">Nuevo Nombre:</label>
+        <input type="text" id="nuevoNombre" name="nuevoNombre" required>
+        <br>
+        <label for="nuevaDescripcion">Nueva Descripción:</label>
+        <textarea id="nuevaDescripcion" name="nuevaDescripcion" required></textarea>
+        <br>
+        <label for="nuevoPrecio">Nuevo Precio:</label>
+        <input type="number" step="0.01" id="nuevoPrecio" name="nuevoPrecio" required>
+        <br>
+        <label for="nuevoStock">Nuevo Stock:</label>
+        <input type="number" id="nuevoStock" name="nuevoStock" required>
+        <br>
+        <input type="submit" value="Actualizar">
+    </form>
+</body>
+</html>

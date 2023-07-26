@@ -1,0 +1,63 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #ecf9ff;
+    color: #ee3030;
+    margin: 0; /* Elimina el margen predeterminado del cuerpo */
+    padding: 1rem;
+    background-image: url('https://news.northeastern.edu/wp-content/uploads/2021/12/neu_m044fj73n.jpg'); /* Agrega la ruta de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    max-width: 400px; /* Ajusta el tamaño máximo del contenedor */
+    background-color: rgba(255, 255, 255, 0.8); /* Ajusta el nivel de transparencia cambiando el valor de la opacidad (0.8) */
+    padding: 2rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 1rem; /* Agrega espacio en la parte inferior del título */
+  }
+  
+  form {
+    text-align: center; /* Centra el formulario dentro del contenedor */
+  }
+  
+  label {
+    font-weight: 700;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  input[type="number"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  input[type="submit"] {
+    background-color: #ae90cf;
+    color: #ffffff;
+    padding: 0.8rem 1.5rem;
+    font-size: 14px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #9c78be;
+  }
+  

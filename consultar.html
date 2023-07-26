@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles/consultar.css">
+    <link rel="stylesheet" href="styles/menu.css">
+    <script src="js/menu.js"></script>
+    <title>Actualizar Medicamento</title>
+</head>
+<body>
+    <header>
+        <nav id='cssmenu'>
+            <div class="logo"><a href="index.html">Farmacia </a></div>
+            <div id="head-mobile"></div>
+            <div class="button"></div>
+            <ul>
+                <li class='active'><a href='index.html'>Inicio</a></li>
+                <li><a href='insertar.html'> Insertar</a></li>
+                <li><a href='actualizar.html'>Actualizar</a></li>
+                <li><a href='venta_medicamento.html'>Ventas</a></li>
+                <li><a href='consultar.html'>Consultar
+                </a></li>
+                <li><a href='eliminar_producto.html'>Eliminar</a></li>
+            </ul>
+        </nav>
+       
+    </header>
+    <title>Consulta de Tablas</title>
+</head>
+<body>
+    <h1>Consulta de Tablas</h1>
+    <form method="post" action="consultar_tablas.php">
+        <label for="tabla">Selecciona una tabla:</label>
+        <select name="tabla" id="tabla">
+            <option value="medicamentos">medicamentos</option>
+            <option value="clientes">clientes</option>
+            <option value="ventas">ventas</option>
+            <option value="detalles_venta">detalles_venta</option>
+        </select>
+        <input type="submit" value="Consultar">
+    </form>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/ventas.css">
+    <title>Registro de Ventas</title>
+</head>
+<body>
+    <h1>Registro de Ventas</h1>
+    <link rel="stylesheet" href="styles/menu.css">
+    <script src="js/menu.js"></script>
+    <title>Actualizar Medicamento</title>
+</head>
+<body>
+    <header>
+        <nav id='cssmenu'>
+            <div class="logo"><a href="index.html">Farmacia </a></div>
+            <div id="head-mobile"></div>
+            <div class="button"></div>
+            <ul>
+                <li class='active'><a href='index.html'>Inicio</a></li>
+                <li><a href='insertar.html'> Insertar</a></li>
+                <li><a href='actualizar.html'>Actualizar</a></li>
+                <li><a href='venta_medicamento.html'>Ventas</a></li>
+                <li><a href='consultar.html'>Consultar
+                </a></li>
+                <li><a href='eliminar_producto.html'>Eliminar</a></li>
+            </ul>
+        </nav>
+       
+    </header>
+    <form method="post" action="guardar_venta.php">
+        <fieldset>
+            <legend>Datos del Cliente</legend>
+            <label for="clienteNombre">Nombre del Cliente:</label>
+            <input type="text" id="clienteNombre" name="clienteNombre" required>
+            <br>
+            <label for="clienteDireccion">Dirección del Cliente:</label>
+            <input type="text" id="clienteDireccion" name="clienteDireccion" required>
+            <br>
+            <label for="clienteTelefono">Teléfono del Cliente:</label>
+            <input type="text" id="clienteTelefono" name="clienteTelefono" required>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Detalles de la Venta</legend>
+            <label for="medicamentoNombre">Medicamento:</label>
+            <input type="text" id="medicamentoNombre" name="medicamentoNombre" required>
+            <br>
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" name="cantidad" required>
+        </fieldset>
+        <br>
+        <input type="submit" value="Registrar Venta">
+    </form>
+</body>
+</html>
+
+
+
+
